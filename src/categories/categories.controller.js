@@ -1,4 +1,5 @@
 const categoriesService = require('./categories.service') // requires the service object that was created assigns it ot the variable categoriesService
+const asyncErrorBoundary = require('../errors/asyncErrorBoundary')
 
 async function list(req, res, next) {
 	try {

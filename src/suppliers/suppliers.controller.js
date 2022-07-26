@@ -1,5 +1,6 @@
 const suppliersService = require('./suppliers.service')
 const hasProperties = require('../errors/hasProperties')
+const asyncErrorBoundary = require('../errors/asyncErrorBoundary')
 const hasRequiredProperties = hasProperties('supplier_name', 'supplier_email')
 
 const VALID_PROPERTIES = [
